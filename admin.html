@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface - Speaker List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>全米団 Simulation Conference</h1>
+
+    <!-- Admin Interface -->
+    <div id="admin-interface">
+        <h2>Admin Interface</h2>
+        <label for="country-crossout-select">Select Country to Cross Out:</label>
+        <select id="country-crossout-select">
+            <option value="Australia">Australia</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Brazil">Brazil</option>
+            <option value="France">France</option>
+            <option value="Chile">Chile</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Germany">Germany</option>
+            <option value="Haiti">Haiti</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Japan">Japan</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Syria">Syria</option>
+            <option value="Türkiye">Türkiye</option>
+            <option value="United States of America">United States of America</option>
+            <!-- Add more countries as needed -->
+        </select>
+        <button id="crossout-speaker">Cross Out Speaker</button>
+        <button id="crossout-next-speaker">Cross Out Next Speaker</button>
+        <button id="reset-speaker-list">Reset Speaker List</button>
+    </div> 
+
+    <div id="current-speakers" class="admin-section">
+        <h2>Current Speakers</h2>
+        <ul id="speaker-list">
+            <!-- Speakers will be added here -->
+        </ul>
+    </div>
+
+    <!-- Notes from Countries -->
+    <div id="note-to-admin" class="admin-section">
+        <h2>Notes from Delegations</h2>
+        <ul id="notes-list">
+            <!-- Notes will be displayed here -->
+        </ul>
+        <button id="clear-notes">Clear Notes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

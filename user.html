@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface - Speaker List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>全米団 Simulation Conference</h1>
+    
+    <!-- Representing Country Selection -->
+    <div id="representing-country">
+        <h2>My Delegation</h2>
+        <label for="representing-country-select">Selecting Delegation:</label>
+        <select id="representing-country-select">
+            <option value="Australia">Australia</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Brazil">Brazil</option>
+            <option value="France">France</option>
+            <option value="Chile">Chile</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Germany">Germany</option>
+            <option value="Haiti">Haiti</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Japan">Japan</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Syria">Syria</option>
+            <option value="Türkiye">Türkiye</option>
+            <option value="United States of America">United States of America</option>
+            <!-- Add more countries as needed -->
+        </select>
+        <button id="add-speaker">Add my delegation to speakers' list</button>
+    </div>
+
+    <!-- Current Speakers -->
+    <div id="current-speakers">
+        <h2>Current Speakers</h2>
+        <ul id="speaker-list">
+            <!-- Speakers will be added here -->
+        </ul>
+    </div>
+
+    <!-- Note to Admin -->
+    <div id="note-to-admin">
+        <h2>Send Note to Dias</h2>
+        <label for="note-input">Your Note:</label>
+        <textarea id="note-input" rows="4" cols="50"></textarea>
+        <button id="send-note">Send Note</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
